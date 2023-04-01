@@ -7,8 +7,28 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pymongo = {extras = ["serv"], version = "^4.3.3"}
+docker = "^6.0.1"
+docker-compose = "^1.29.2"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+taskipy = "^1.10.4"
+isort = "^5.12.0"
+black = "^23.3.0"
+pytest-cov = "^4.0.0"
+docker = "^6.0.1"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "black --check --diff . && isort --check --diff ."
+pre_test = "task lint"
+test = "pytest -s -x --cov=mongoPyCrud -vv"
+post_test = "coverage html"
