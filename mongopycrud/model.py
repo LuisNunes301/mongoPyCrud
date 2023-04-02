@@ -1,13 +1,18 @@
 from typing import Optional
-from odmantic import Field, Model
+from pydantic import BaseModel, Field
 
 
-class Constumers(Model):
+class People(BaseModel):
     name: str
     location: Optional[str] =None
+    founded: int = Field(ge=1440)
 
-instances = [
-    Constumers(name='Luis', location='BR')
-    Constumers(name='Vini', location='NA')
-    Constumers(name='Nunes', location='BR')
-]
+    class Config:
+        schema_extra = {
+            "example":{
+                "_id": "066de609-b04a-4b30-b46c-32537c7f1f6e",
+                "name" : "Luis Nunes",
+                "location": "BR",
+                "founded": 2002
+            }
+        }
