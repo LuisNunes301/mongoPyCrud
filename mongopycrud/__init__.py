@@ -1,30 +1,36 @@
 from pymongo import MongoClient
 
-
-
-uri = 'mongodb://root:example@localhost:27017/'
-
-#coneçao com o mongo
-client = pymongo.MongoClinte(uri)
-
-#criando uma coleáo qualquer
-db = client["customersdb"]
-customers = db["customers"]
-# lista de consumidores
-customers_list = [
-  { "name": "Amy", "address": "Apple st 652"},
-  { "name": "Hannah", "address": "Mountain 21"},
-  { "name": "Michael", "address": "Valley 345"},
-  { "name": "Sandy", "address": "Ocean blvd 2"},
-  { "name": "Betty", "address": "Green Grass 1"},
-  { "name": "Richard", "address": "Sky st 331"},
-  { "name": "Susan", "address": "One way 98"},
-  { "name": "Vicky", "address": "Yellow Garden 2"},
-  { "name": "Ben", "address": "Park Lane 38"},
-  { "name": "William", "address": "Central st 954"},
-  { "name": "Chuck", "address": "Main Road 989"},
-  { "name": "Viola", "address": "Sideway 1633"}
-]
-
+uri = 'mongodb://root:pass@localhost:27017/'
 
 client = MongoClient(uri)
+
+
+db = client['Luis']  # Tradicional
+coll = db['pessoas']
+
+def insert(**args):
+    coll.insert(args)
+    # coll.insert(
+    #     {}  # dict
+    # )
+def read(**args):
+    """
+    Um único registro: find_one
+    find
+    find_one
+    find_many
+    """
+    coll.find(  # vários
+       args
+    )
+
+
+def update(**args):
+    coll.update(args
+    )
+
+
+def delete(**args):
+    coll.remove(args
+
+    )
