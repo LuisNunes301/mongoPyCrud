@@ -6,6 +6,13 @@ Treino de um crud com faspi e pymong, usando pydantic para uma melhor estrutura√
 2. pymongo
 3. fastapi 
 
+## criar um ".env" na pasta mongopycrur
+````
+ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net
+DB_NAME=pymongo_tutorial
+````
+
+
 ## Como entrar iniciar o fastapi
 ```bash
 ## padrao via 
