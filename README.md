@@ -5,7 +5,7 @@ Treino de um crud com faspi e pymong, usando pydantic para uma melhor estrutura√
 1. python
 2. pymongo
 3. fastapi 
-4. python-dotenv 
+
 
 ## senha cluster
 h0TtsxwuhRMXVSmo
