@@ -15,6 +15,4 @@ h0TtsxwuhRMXVSmo
 ## padrao via 
 cd mongopycrud
 bash uvicorn main:app --reload
-##via poetry alias
-task run 
 ```
