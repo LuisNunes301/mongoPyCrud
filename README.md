@@ -1,11 +1,11 @@
 ## Poetry + fastapi + pymongo
 
-
+Treino de um crud com faspi e pymong, usando pydantic para uma melhor estruturação de modulos de banco de dados.
 ## Dependencias a ser instalada
-1.python
-2.pymongo
-3.fastapi 
-4.python-dotenv 
+1. python
+2. pymongo
+3. fastapi 
+4. python-dotenv 
 
 ## senha cluster
 h0TtsxwuhRMXVSmo
@@ -13,7 +13,8 @@ h0TtsxwuhRMXVSmo
 ## Como entrar iniciar o fastapi
 ```bash
 ## padrao via 
-bash uvicorn mongopycrud.main:app --reload
+cd mongopycrud
+bash uvicorn main:app --reload
 ##via poetry alias
 task run 
 ```
