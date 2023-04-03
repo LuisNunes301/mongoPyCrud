@@ -10,6 +10,7 @@ python = "^3.11"
 pymongo = "^4.3.3"
 fastapi = {extras = ["all"], version = "^0.95.0"}
 python-dotenv = "^1.0.0"
+pydantic = "^1.10.7"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -31,4 +32,4 @@ lint = "black --check --diff . && isort --check --diff ."
 pre_test = "task lint"
 test = "pytest -s -x --cov=mongoPyCrud -vv"
 post_test = "coverage html"
-run = "uvicorn mongopycrud.main:app --reload"
+run = " uvicorn main:app --reload"
