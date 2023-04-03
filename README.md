@@ -6,10 +6,6 @@ Treino de um crud com faspi e pymong, usando pydantic para uma melhor estrutura√
 2. pymongo
 3. fastapi 
 
-
-## senha cluster
-h0TtsxwuhRMXVSmo
-
 ## Como entrar iniciar o fastapi
 ```bash
 ## padrao via 
