@@ -1,4 +1,4 @@
-## Poetry + fastapi + pymongo
+## Poetry + fastapi + pymongo + vscode
 
 Treino de um crud com faspi e pymong, usando pydantic para uma melhor estruturação de modulos de banco de dados.
 ## Dependencias a ser instalada
@@ -6,7 +6,7 @@ Treino de um crud com faspi e pymong, usando pydantic para uma melhor estrutura�
 2. pymongo
 3. fastapi 
 
-## criar um ".env" na pasta mongopycrur
+## criar um ".env" na pasta mongopycrud
 ````
 ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net
 DB_NAME=pymongo_tutorial
